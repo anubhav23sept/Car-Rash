@@ -22,8 +22,10 @@ gameDisplay=pygame.display.set_mode((display_width,display_height))
 pygame.display.set_caption("My First Game")
 clock=pygame.time.Clock()
 
-car_image=pygame.image.load("Untitled.png")
-icon_image=pygame.image.load("Untitled2.png")
+# car_image=pygame.image.load("Untitled.png")
+# icon_image=pygame.image.load("Untitled2.png")
+car_image=pygame.image.load("car_green.png")
+icon_image=pygame.image.load("car.jpeg")
 pygame.display.set_icon(icon_image)
 
 def things_dodged(count):
@@ -126,15 +128,15 @@ def game_loop():
 		x=(display_width * 0.40)
 		y=(display_height * 0.767)
 		i=0
-		car_width=120
+		car_width=60
 		x_change=0
 		dodged=0
 
-		thing_width=100
+		thing_width=40
 		thing_startx=random.randrange(0,display_width-thing_width)
 		thing_starty=-600
-		thing_speed=4
-		thing_height=100
+		thing_speed=20
+		thing_height=50
 
 		crashed=False
 
